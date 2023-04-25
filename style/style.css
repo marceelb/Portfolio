@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
+
+colores{
+  color: #F2F2F2;  
+  color: #E6E6E6;
+  color: #A6A6A6;  
+  color: #737373;  
+  color: #404040;  
+  color: #0D0D0D;  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    background-color: #E6E6E6;
+    position: relative;
+
+
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    color: #0D0D0D;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #0D0D0D;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+
+.menu ul li a::after{
+    content:'';
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #404040;
+    bottom: -10px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.menu ul li a:hover::after{
+    width: 100%;
+}
+
+ /* Home Start Here  */
+
+.inicio {
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2 ;
+    position: relative;
+}
+
+#0D0D0D
+#F2F2F2
+
+.texto-inicio {
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #0D0D0D;
+    position: relative;
+
+
+}
+
+.texto-inicio h2{
+    letter-spacing: 1.4px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.texto-inicio h2 .nombre {
+    font-size: 230px;
+    color: #0D0D0D;
+    font-weight: 100;
+    width: 100%;
+}
+
+.texto-inicio h2 .tipeado {
+    font-size: 15px;
+    color: #0D0D0D;
+    font-weight: bold;
+    padding: 17px;
+}
+
+/* .texto button{
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    padding: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 45px;
+    width: 130px;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+} */
+
+/* .texto-inicio button:hover{
+    background-color: #e0e0e0;
+    transition: 0.5s;
+} */
+
+.footer-icon{
+    padding-left: 17px;
+    padding-top: 20px;
+}
+
+.footer-icon i{
+    font-size: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-icon i:hover{
+    color:#737373 ;
+}
+
+
+ /*  About Us Start Here  */
+
+ #contenedor {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background-color: #F2F2F2;
+
+ }
+
+#sobre-nosotros {
+
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6E6E6;
+}
+
+.caja-texto{
+    height: 90vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 50px;
+
+}
+
+.caja-texto h2 {
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: start  ;
+}
+
+.caja-texto h3 {
+    font-size: 11px;
+    font-weight: bold;
+    display: flex;
+    align-items: start  ;
+    letter-spacing: 1.4px;
+    line-height: 1.4;
+
+}
+
+
+#sobre-nosotros .caja-texto2{
+    height: 90vh;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.caja-texto2 .icon {
+    font-size: 30px;
+}
+
+ /*  Proyect Start Here  */
+
+ #proyectos{
+    display: flex;
+    height: 100vh;
+    background-color: #F2F2F2;
+    justify-content: space-around;
+ }
+
+ #proyectos .proyecto-1 {
+    color: #E6E6E6;
+    margin-top: 300px;
+    background: #404040;
+    height: 300px;
+    width: 300px;
+ }
+
+ #proyectos .proyecto-2 {
+    color: #E6E6E6;
+    margin-top: 300px;
+    background: #404040;
+    height: 300px;
+    width: 300px;
+ }
+
+ #proyectos .proyecto-3 {
+    color: #E6E6E6;
+    margin-top: 300px;
+    background: #404040;
+    height: 300px;
+    width: 300px;
+ }
+
+
+  /*  Contact Start Here  */
+
+#contacto {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #F2F2F2;
+  }
+
+  .contacto {
+    height: 70vh;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E6E6E6;
+  }
+
+  .datos {
+    display: inline-block   ;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .contactos-icon{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 300px;
+    font-size: 30px;
+
+  }
+
+  .contactos-icon i{
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .contactos-icon i:hover{
+    color:#737373 ;
+  }
