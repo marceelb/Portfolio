@@ -23,6 +23,9 @@ body {
 
 }
 
+
+ /* Menu Start Here  */
+
 header{
     display: flex;
     justify-content: space-between;
@@ -78,6 +81,29 @@ header{
 
 .menu ul li a:hover::after{
     width: 100%;
+}
+
+.menu ul i{
+    text-decoration: none;
+    color: #0D0D0D;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.switch {
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.switch:active {
+
 }
 
  /* Home Start Here  */
