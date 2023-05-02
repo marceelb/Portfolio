@@ -7,6 +7,7 @@
     <title>Marcelo Brizuela</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <!-- Menu Start Here -->
@@ -20,7 +21,14 @@
                     <li><a href="#contenedor">SOBRE NOSOTROS</a></li>
                     <li><a href="#proyectos">PROYECTOS</a></li>
                     <li><a href="#contacto">CONTACTO</a></li>
-                   <button class="switch" id="switch"><i class="fa-solid fa-moon"></i></button>
+                <div class="switch-btn">
+                    <span class="icon light-icon material-symbols-outlined">
+                        light_mode
+                    </span>
+                    <span class="icon dark-icon material-symbols-outlined">
+                        dark_mode
+                    </span>
+                </div>
                 </ul>
             </div>
 
@@ -56,6 +64,7 @@
         </div>
         <div class="caja-texto2">
             <div class="icon">
+                <i class="fa-brands fa-git-alt"></i>
                 <i class="fa-brands fa-html5"></i>
                 <i class="fa-brands fa-css3-alt"></i>
                 <i class="fa-brands fa-js"></i>
@@ -66,7 +75,11 @@
    <!-- Proyect Start Here -->
 
    <div id="proyectos">
-        <div class="proyecto-1">PROYECTO 1</div>
+        <div class="proyecto-1">
+            <div class="ejemplo1">
+                <img src="image/weather.png" alt="">
+            </div>
+        </div>
         <div class="proyecto-2">PROYECTO 2</div>
         <div class="proyecto-3">PROYECTO 3</div>
    </div>
@@ -88,6 +101,6 @@
 
    <footer></footer>
 
-   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script src="/script/index.js"></script>
 </body>
 </html>
