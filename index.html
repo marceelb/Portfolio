@@ -14,29 +14,42 @@
     <header>
 
             <div class="logo">
-                <h3>M.</h3>
+                <h3><a href="#inicio">M.</a></h3>
             </div>
-            <div class="menu"> 
+
+            <div class="switch-btn">
+                <span class="icon light-icon material-symbols-outlined">
+                    light_mode
+                </span>
+                <span class="icon dark-icon material-symbols-outlined">
+                    dark_mode
+                </span>
+            </div>
+
+            <nav class="menu"> 
                 <ul>
-                    <li><a href="#contenedor">SOBRE NOSOTROS</a></li>
-                    <li><a href="#proyectos">PROYECTOS</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
-                <div class="switch-btn">
-                    <span class="icon light-icon material-symbols-outlined">
-                        light_mode
-                    </span>
-                    <span class="icon dark-icon material-symbols-outlined">
-                        dark_mode
-                    </span>
-                </div>
+                    <li class="toggle"><a href="#contenedor">SOBRE MÍ</a></li>
+                    <li class="toggle"><a href="#proyectos">PROYECTOS</a></li>
+                    <li class="toggle"><a href="#contacto">CONTACTO</a></li>
                 </ul>
-            </div>
+            </nav>
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
     </header>
 
+    <nav class="menu2"> 
+        <ul>
+            <li class="toggle"><a href="#contenedor">SOBRE MÍ</a></li>
+            <li class="toggle"><a href="#proyectos">PROYECTOS</a></li>
+            <li class="toggle"><a href="#contacto">CONTACTO</a></li>
+        </ul>
+    </nav>
+
     <!-- Home Start Here -->
 
-   <div class="inicio">
+   <div class="inicio" id="inicio">
         <div class="texto-inicio">
             <h2>
                 <span class="nombre">MARCEL</span><br>
@@ -63,7 +76,8 @@
                habilidades y ayudar a construir soluciones tecnológicas emocionantes.</h3>
         </div>
         <div class="caja-texto2">
-            <div class="icon">
+            <H2>HABILIDADES</H2><br>
+            <div class="icon"><br>
                 <i class="fa-brands fa-git-alt"></i>
                 <i class="fa-brands fa-html5"></i>
                 <i class="fa-brands fa-css3-alt"></i>
@@ -75,13 +89,17 @@
    <!-- Proyect Start Here -->
 
    <div id="proyectos">
-        <div class="proyecto-1">
-            <div class="ejemplo1">
-                <img src="image/weather.png" alt="">
+        <div class="slider">
+            <div class="proyecto-1">
+                <div class="ejemplo1"></div>
+            </div>
+            <div class="proyecto-2">
+                <div class="ejemplo2"></div>
+            </div>
+            <div class="proyecto-3">
+                <div class="ejemplo3"></div>
             </div>
         </div>
-        <div class="proyecto-2">PROYECTO 2</div>
-        <div class="proyecto-3">PROYECTO 3</div>
    </div>
 
     <!-- Contact Start Here -->
