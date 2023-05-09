@@ -2,7 +2,7 @@ const root = document.querySelector('html');
 const switchBtn = document.querySelector('.switch-btn');
 const content = document.querySelector('.content');
 const menuToggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu2')
+const menuResponsive = document.querySelector('.menu-responsive')
 
 switchBtn.addEventListener('click', () => {
     root.classList.toggle('dark');
@@ -10,5 +10,5 @@ switchBtn.addEventListener('click', () => {
 
 
 menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('menu2--show');
+    menuResponsive.classList.toggle('menu-responsive--show');
 });

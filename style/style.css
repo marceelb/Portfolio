@@ -21,17 +21,68 @@ body {
     transition: background-color .5s ease, color .5s ease;
 
 }
+
 :root{
     --bg: #F2F2F2;
     --bg-2: #E6E6E6;
     --main-color: #1F1F1F; 
 }
+
 .dark:root {
     --bg: #1F1F1F;
     --bg-2: #1F1F1F;
     --main-color: #F2F2F2;
-
 }
+
+:root {
+    --shadow-color: 0deg 0% 70%;
+    --shadow-elevation-low:
+      0px 0.9px 0.8px hsl(var(--shadow-color) / 0.39),
+      0px 1.3px 1.1px -2.1px hsl(var(--shadow-color) / 0.28),
+      0px 3.1px 2.7px -4.3px hsl(var(--shadow-color) / 0.17);
+    --shadow-elevation-medium:
+      0px 0.9px 0.8px hsl(var(--shadow-color) / 0.33),
+      0px 1.4px 1.2px -1.1px hsl(var(--shadow-color) / 0.27),
+      0px 3.1px 2.7px -2.1px hsl(var(--shadow-color) / 0.22),
+      0.1px 7.4px 6.3px -3.2px hsl(var(--shadow-color) / 0.16),
+      0.2px 15.6px 13.3px -4.3px hsl(var(--shadow-color) / 0.11);
+    --shadow-elevation-high:
+      0px 0.9px 0.8px hsl(var(--shadow-color) / 0.3),
+      0px 1.7px 1.5px -0.5px hsl(var(--shadow-color) / 0.28),
+      0px 2.7px 2.3px -1px hsl(var(--shadow-color) / 0.25),
+      0.1px 4.6px 3.9px -1.4px hsl(var(--shadow-color) / 0.23),
+      0.1px 7.9px 6.8px -1.9px hsl(var(--shadow-color) / 0.2),
+      0.1px 13.1px 11.2px -2.4px hsl(var(--shadow-color) / 0.18),
+      0.2px 20.6px 17.6px -2.9px hsl(var(--shadow-color) / 0.15),
+      0.3px 31px 26.5px -3.3px hsl(var(--shadow-color) / 0.13),
+      0.5px 44.8px 38.3px -3.8px hsl(var(--shadow-color) / 0.1),
+      0.7px 62.4px 53.4px -4.3px hsl(var(--shadow-color) / 0.08);
+  }
+
+  .dark:root {
+    --shadow-color: 0deg 0% 5%;
+    --shadow-elevation-low:
+      0px 0.9px 0.8px hsl(var(--shadow-color) / 0.39),
+      0px 1.3px 1.1px -2.1px hsl(var(--shadow-color) / 0.28),
+      0px 3.1px 2.7px -4.3px hsl(var(--shadow-color) / 0.17);
+    --shadow-elevation-medium:
+      0px 0.9px 0.8px hsl(var(--shadow-color) / 0.33),
+      0px 1.4px 1.2px -1.1px hsl(var(--shadow-color) / 0.27),
+      0px 3.1px 2.7px -2.1px hsl(var(--shadow-color) / 0.22),
+      0.1px 7.4px 6.3px -3.2px hsl(var(--shadow-color) / 0.16),
+      0.2px 15.6px 13.3px -4.3px hsl(var(--shadow-color) / 0.11);
+    --shadow-elevation-high:
+      0px 0.9px 0.8px hsl(var(--shadow-color) / 0.3),
+      0px 1.7px 1.5px -0.5px hsl(var(--shadow-color) / 0.28),
+      0px 2.7px 2.3px -1px hsl(var(--shadow-color) / 0.25),
+      0.1px 4.6px 3.9px -1.4px hsl(var(--shadow-color) / 0.23),
+      0.1px 7.9px 6.8px -1.9px hsl(var(--shadow-color) / 0.2),
+      0.1px 13.1px 11.2px -2.4px hsl(var(--shadow-color) / 0.18),
+      0.2px 20.6px 17.6px -2.9px hsl(var(--shadow-color) / 0.15),
+      0.3px 31px 26.5px -3.3px hsl(var(--shadow-color) / 0.13),
+      0.5px 44.8px 38.3px -3.8px hsl(var(--shadow-color) / 0.1),
+      0.7px 62.4px 53.4px -4.3px hsl(var(--shadow-color) / 0.08);
+  }
 
         /* Menu Start Here  */
 
@@ -44,6 +95,7 @@ header{
     position: fixed;
     height: 50px;
     width: 100%;
+    box-shadow: var(--shadow-elevation-medium);
 }
 
 .container-header{
@@ -105,7 +157,7 @@ header{
     width: 100%;
 }
 
-.menu2{
+.menu-responsive{
     background: var();
     position: none;
     top: 50px;
@@ -122,7 +174,7 @@ header{
     
 }
 
-.menu2 ul{
+.menu-responsive ul{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,11 +183,11 @@ header{
     list-style: none;
 }
 
-.menu2 li{
+.menu-responsive li{
     list-style: none;
 }
 
-.menu2 a{
+.menu-responsive a{
     text-decoration: none;
     color: var(--main-color);
 }
@@ -239,6 +291,18 @@ header{
     color: var(--main-color);
 }
 
+.footer-icon a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.curriculum{
+    color: var(--main-color);
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 .footer-icon i{
     font-size: 25px;
     margin-right: 25px;
@@ -247,6 +311,10 @@ header{
 }
 
 .footer-icon i:hover{
+    color:#737373 ;
+}
+
+.footer-icon .curriculum:hover{
     color:#737373 ;
 }
 
@@ -308,18 +376,24 @@ header{
 }
 
 .caja-texto2 h2{
+    position: static;
+    top: -16px;
     font-size: 15px;
     font-weight: bold;
     display: flex;
     align-items: start;
     color: var(--main-color);
-    margin-bottom: 46px;
+
 }
 
-.caja-texto2 .icon {
+.caja-texto2 .icons {
+    position: static;
     font-size: 30px;
     color: var(--main-color);
+}
 
+.caja-texto2 .icons i{
+    padding-left: 4px;
 }
 
 
@@ -412,7 +486,7 @@ header{
 
 .contactos-icon{
     display: flex;
-    position: relative;
+    position: static;
     justify-content: space-around;
     width: 300px;
     font-size: 30px;
@@ -466,7 +540,7 @@ header{
         display: none;
     }
     
-    .menu2--show{
+    .menu-responsive--show{
         display: flex;
         position: fixed;
     
@@ -548,7 +622,12 @@ header{
         font-size: 15px;
         color: var(--main-color);
         font-weight: bold;
-        padding: 17px;
+        padding: 17px 17px 17px 10px;
+    }
+
+    .texto-inicio .footer-icon{
+        padding-left: 10px;
+        padding-top: 10px;
     }
 
     #sobre-nosotros {
@@ -586,29 +665,75 @@ header{
         }
 
         header{
-            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: var(--bg-2);
         }
-
-
+    
+        .container-header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
         .logo {
             color: var(--main-color);
+            width: 30%;
         }
-
+    
+        .menu{
+            display: none;
+        }
+        
+        .menu-responsive--show{
+            display: flex;
+            position: fixed;
+        
+    
+        }
+    
+        .switch-btn{
+            position: relative;
+            width: 30%;
+    
+        }
+        
         .menu ul li a{
             text-decoration: none;
             color: var(--main-color);
             letter-spacing: 1px;
-            /* position: relative; */
-            font-size: 7px;
+            position: relative;
+            font-size: 11px;
             font-weight: bold;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-
+        
         }
-
+        
+        .menu ul li a::after{
+            content:'';
+            display: block;
+            position: absolute;
+            width: 0%;
+            height: 3px;
+            background-color: var(--main-color);
+            bottom: -10px;
+            left: 0;
+            transition: 0.5s;
+        }
+        
+        .menu ul li a:hover::after{
+            width: 100%;
+        }
+    
+        .menu-toggle{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 25px;
+            color: var(--main-color);
+            width: 30%;
+        }
+    
         /* Home Start Here  */
 
         .inicio {
