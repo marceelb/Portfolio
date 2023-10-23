@@ -490,13 +490,12 @@ header{
     justify-content: space-around;
     width: 300px;
     font-size: 30px;
-    color: var(--main-color);
-
 }
 
 .contactos-icon i{
     cursor: pointer;
     transition: 0.3s;
+    color: var(--main-color);   
 }
 
 .contactos-icon i:hover{
